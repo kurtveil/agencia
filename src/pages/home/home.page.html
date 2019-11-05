@@ -4,24 +4,18 @@
       <ion-row class="ion-justify-content-center">
         <ion-col class="ion-align-self-center" size-md="6" size-lg="5" size-xs="12">
           <div class="ion-text-center">
-            <h3>Crear Cuenta</h3>
+            <h3>Iniciar Sesion</h3>
           </div>
           <div class="ion-padding">
             <ion-item>
-              <ion-input name="name" type="text" placeholder="Nombre" ngModel required></ion-input>
+              <ion-input name="name" type="text" placeholder="Usuario" ngModel required></ion-input>
             </ion-item>
             <ion-item>
-              <ion-input name="email" type="email" placeholder="Example@gmail.com" ngModel required></ion-input>
-            </ion-item>
-            <ion-item>
-              <ion-input name="password" type="password" placeholder="Constraseña" ngModel required></ion-input>
-            </ion-item>
-            <ion-item>
-              <ion-input name="confirm" type="password" placeholder="Repita Constraseña" ngModel required></ion-input>
+              <ion-input name="confirm" type="password" placeholder="Constraseña" ngModel required></ion-input>
             </ion-item>
           </div>
           <div class="ion-padding">
-            <ion-button size="large" type="submit" expand="block">Registrarse</ion-button>
+            <ion-button size="medium" type="submit" expand="block"  [routerLink]="[ '/register' ]">Iniciar Sesion</ion-button>
           </div>
         </ion-col>
       </ion-row>

@@ -11,4 +11,8 @@ login: boolean;
     this.login = false;
   }
 
+  register(form) {
+//
+  }
+
 }
