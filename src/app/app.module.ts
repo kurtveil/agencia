@@ -1,20 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
-
+import { FormsModule } from '@angular/forms';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-
-import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HomeDirective } from '../Guards/home.directive';
-import { LoginDirective } from '../Guards/login.directive';
+// Components
+import { AppComponent } from './app.component';
+import { LoginComponent } from 'src/components/login/login.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeDirective, LoginDirective],
+  declarations: [
+    AppComponent,
+    LoginComponent,
+  ],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [
+    FormsModule,
+    BrowserModule,
+    IonicModule.forRoot(), AppRoutingModule],
   providers: [
     StatusBar,
     SplashScreen,
@@ -22,4 +27,4 @@ import { LoginDirective } from '../Guards/login.directive';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
