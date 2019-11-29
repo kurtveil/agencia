@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { HomePage } from './home.page';
 // Componentes
 import { SidebarComponent } from 'src/components/sidebar/sidebar.component';
 import { NavbarComponent } from 'src/components/navbar/navbar.component';
-import { HomePage } from './home.page';
 
 @NgModule({
   imports: [
