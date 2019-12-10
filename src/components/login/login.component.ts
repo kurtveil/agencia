@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
   login: boolean;
+  password: string;
+  name: string;
+
   constructor() {
     this.login = false;
   }
@@ -15,7 +18,9 @@ export class LoginComponent implements OnInit {
   ngOnInit() { }
 
   loginAutenticated() {
-    //
+    if (this.password === '' && this.name === '') {
+      alert('no señor');
+    }
   }
 
 }

@@ -10,6 +10,8 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
+  public mostrarMenus: boolean;
+  public isDentity: boolean;
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
@@ -23,5 +25,16 @@ export class AppComponent {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
+  }
+  // mostrarUocultarMenus() {
+  //   if (this._servicioLogin.isIdentity()) {
+  //     this.mostrarMenus = true;
+  //   } else {
+  //     this.mostrarMenus = false;
+  //   }
+  // }
+  mostrarUocultarMenus() {
+      this.mostrarMenus = true;
+      this.mostrarMenus = false;
   }
 }

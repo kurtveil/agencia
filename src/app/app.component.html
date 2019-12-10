@@ -1,3 +1,6 @@
 <ion-app>
+    <app-navbar *ngIf="mostrarMenus"></app-navbar>
+    <app-sidebar *ngIf="mostrarMenus"></app-sidebar>
+    
   <ion-router-outlet></ion-router-outlet>
 </ion-app>
