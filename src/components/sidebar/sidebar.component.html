@@ -2,17 +2,102 @@
     <ion-menu type="overlay">
         <ion-header>
             <ion-toolbar color="primary">
-                <ion-title>Start Menu</ion-title>
+
+                <ion-title>
+                    <h1>Agencia</h1>
+                </ion-title>
             </ion-toolbar>
         </ion-header>
         <ion-content>
             <ion-list>
-                <ion-item>Menu Item</ion-item>
-                <ion-item>Menu Item</ion-item>
-                <ion-item>Menu Item</ion-item>
-                <ion-item>Menu Item</ion-item>
-                <ion-item>Menu Item</ion-item>
+                <ion-item>
+                    <ion-icon name="home" slot="end">
+                    </ion-icon>
+                    <ion-label>
+
+                        <a style="text-decoration: none" [routerLink]="['/home']">Inicio</a>
+                    </ion-label>
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="apps" slot="end">
+                    </ion-icon>
+                    <ion-label>
+                        <a style="text-decoration: none">Seguro</a>
+                    </ion-label>
+
+                    <ion-list>
+                        <li>fgggg</li>
+                    </ion-list>
+                </ion-item>
+
+                <ion-item>
+                    <ion-icon name="calculator" slot="end">
+                    </ion-icon>
+                    <ion-label>
+                        <a style="text-decoration: none" [routerLink]="['/home/list']">Cotiza En Linea</a>
+                    </ion-label>
+                </ion-item>
             </ion-list>
         </ion-content>
     </ion-menu>
-    <ion-router-outlet></ion-router-outlet>
+    <ion-router-outlet main>
+    </ion-router-outlet>
+</ion-split-pane>
+
+<ion-split-pane>
+    <ion-menu type="overlay">
+        <ion-header>
+            <ion-toolbar color="dark">
+
+                <ion-title>
+                    <!-- <img class="imagen" src="assets/img/fastlife.png" alt=""> -->
+                </ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <ion-list>
+                <ion-item>
+                    <ion-icon name="home" slot="end">
+                    </ion-icon>
+                    <ion-label>
+
+                        <a style="text-decoration: none" [routerLink]="['/home']">Inicio</a>
+                    </ion-label>
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="arrow-dropright" slot="end">
+                    </ion-icon>
+                    <ion-label>
+                        <a tyle="text-decoration: none">Seguro</a></ion-label>
+
+                </ion-item>
+                <ion-item>
+                    <ul>
+                        <ion-label>
+                            <a style="text-decoration: none" [routerLink]="['/home/exclusion']">
+                                <ion-icon name="arrow-dropright" slot="end">
+                                </ion-icon>Exclusiones
+                            </a>
+                        </ion-label>
+                        <ion-label>
+                            <a style="text-decoration: none" [routerLink]="['/home/cobertura']">
+                                <ion-icon name="arrow-dropright" slot="end">
+                                </ion-icon>Coberturas
+                            </a>
+                        </ion-label>
+                    </ul>
+                </ion-item>
+
+                <ion-item>
+                    <ion-icon name="calculator" slot="end">
+                    </ion-icon>
+                    <ion-label>
+                        <a style="text-decoration: none" [routerLink]="['/home/list']">Cotiza En Linea</a>
+                    </ion-label>
+                </ion-item>
+
+            </ion-list>
+        </ion-content>
+    </ion-menu>
+</ion-split-pane>
+<ion-router-outlet main></ion-router-outlet>

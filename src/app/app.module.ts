@@ -11,11 +11,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from 'src/components/login/login.component';
 import { HomePageModule } from 'src/pages/home/home.module';
 
+import { NavbarComponent } from 'src/components/navbar/navbar.component';
+import { SidebarComponent } from 'src/components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    NavbarComponent,
+    SidebarComponent
   ],
   entryComponents: [],
   imports: [
