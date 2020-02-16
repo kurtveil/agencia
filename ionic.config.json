@@ -1,5 +1,7 @@
 {
   "name": "Agencia",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

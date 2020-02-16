@@ -9,6 +9,8 @@ import { AppRoutingModule } from './app-routing.module';
 // Components
 import { AppComponent } from './app.component';
 import { LoginComponent } from 'src/components/login/login.component';
+import { HomePageModule } from 'src/pages/home/home.module';
+
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { LoginComponent } from 'src/components/login/login.component';
   imports: [
     FormsModule,
     BrowserModule,
+    HomePageModule,
     IonicModule.forRoot(), AppRoutingModule],
   providers: [
     StatusBar,
